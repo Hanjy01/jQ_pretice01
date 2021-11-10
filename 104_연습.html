@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습</title>
+    <link href="lib/XEIcon-2.2.0/xeicon.min.css" rel="stylesheet"/>
+    <link href="css/104_연습.css" rel="stylesheet"/>
+
+    <script src="lib/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function(){
+            $('.search_icon').click(function(){
+                $('.search').slideDown();
+            })
+
+            $('.close_icon').click(function(){
+                $('.search').slideUp();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header_top clearfix">
+            <p>강의부터 키트까지 모두 집으로! 즐거운 취미여행, 하비풀</p>
+            
+            <nav>
+                <ul>
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+
+            <div class="search_icon">
+                <i class="xi-search"><span>검색</span></i>
+            </div><!-- .search_icon -->
+        </div><!-- .header_top end -->
+
+        <div class="search">
+            <input type="text" placeholder="클래스와 매거진을 검색해 보세요!"/>
+
+            <button>검색</button>
+            
+            <div class="close_icon">
+                <i class="xi-close"><span>닫기버튼</span></i>
+            </div>
+            
+            <div class="text">
+                <ul>
+                    <li>이런 검색어는 어때요?</li>
+                    <li>프랑스자수</li>
+                    <li>마크라메</li>
+                    <li>수채화</li>
+                    <li>색연필</li>
+                    <li>멘티</li>
+                </ul>
+            </div>
+        </div><!-- .search end -->
+    </header>
+</body>
+</html>
